@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="es-Mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./main.css">
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+    <title>SISADCON</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                    <img src="./Assets/user-solid.svg" alt="">
+                </span>
+
+                <div class="text logo-text" id="username-sidebar">
+                    <span class="name" id="username">Usuario</span>
+                    <span class="profession">SISADCON</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!--  <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                -->
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./Entradas/entradas.html">
+                            <i class='bx bx-book-alt icon'></i>
+                            <box-icon name='file-find'></box-icon>
+                            <span class="text nav-text">Entradas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./Inventario/inventario.html">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <box-icon name='book-open'></box-icon>
+                            <span class="text nav-text">Inventario</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./reporteVentas.html">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav-text">Reporte de ventas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./control_gastos.html">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Control de Gastos</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="./ventas/ventas.html">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav-text">Ventas</span>
+                        </a>
+                    </li>
+<!--
+                    <li class="nav-link">
+                        <a href="./configuracion.html" id="config-link">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Configuración</span>
+                        </a>
+                    </li>
+-->
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="https://inspirasmx.com/" id="logout-link">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+
+                <!--
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                -->
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text" id="content"></div>
+        <iframe src="https://sisadcon.nicepage.io/?version=fa458fb0-2c17-45d4-a9e6-26a24bb0b54b" frameborder="0" width="100%" height="100%"></iframe>
+    </section>
+
+
+
+    <!-- <script>
+        // Cargar el contenido del archivo HTML
+        fetch('index.html')
+          .then(response => response.text())
+          .then(html => {
+            // Insertar el contenido en el elemento deseado
+            document.getElementById('content').innerHTML = html;
+          });
+      </script>
+      -->
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

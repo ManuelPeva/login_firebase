@@ -1,0 +1,125 @@
+.inventario{
+    text-align: center;
+    font-size: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid rgb(31, 26, 197);
+    padding: 8px;
+}
+
+input{
+    margin-left: 0.22rem;
+}
+
+.agregar{
+    border-radius: 0.33rem;
+    border-color: #0f51de;
+    background-color: #0f51de;
+    color:white;
+    margin-top: 0.1rem;
+    
+}
+
+.agregar:hover{
+    background-color: #328afd;
+    transition-duration: 1.9s;
+}
+
+.excel{
+    border-radius: 0.33rem;
+    border-color: #21b169;
+    background-color: #21a764;
+    color:white;
+    margin-top: 0.2rem;
+}
+
+.excel:hover{
+    background-color: #30c47a;
+    transition-duration: 1.5s;
+}
+
+.retorno{
+    border-radius: 0.33rem;
+    border-color: #5923cf;
+    background-color: #5d23d8;
+    color:white;
+    margin-top: 0.2rem;
+}
+
+.retorno:hover{
+    background-color: #30c47a;
+    transition-duration: 1.5s;
+}
+
+.entrada{
+    border-radius: 0.33rem;
+    border-color: #0f51de;
+    color: black;
+    margin-top: 0.3rem;
+}
+
+.entrada:hover{
+    border-radius: 0.34rem;
+    border-color: #199457;
+    transition-duration: 1s;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #0f51de;
+    color: white;
+    text-align: center;
+}
+
+.table td:last-child {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #203dce;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .table {
+        font-size: 12px;
+    }
+}
+
+.button.delete{
+    background-color: #FF0000;
+    border-radius: 1.2rem;
+}
+
+.button.delete:hover{
+    background-color: #d33535;
+    box-shadow: 0 0 10px rgba(33, 55, 198, 0.3);
+}
+
+#fecha {
+    width: 200px;
+  }
