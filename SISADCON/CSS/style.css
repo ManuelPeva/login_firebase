@@ -1,0 +1,456 @@
+body{
+    font-family: Arial, sans-serif;
+  }
+  
+  :root{
+      -o-transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  /*HEADER*/
+  
+  header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: relative;
+  }
+  
+  .logo {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    margin-right: 33%; /* Añade un margen derecho opcional para separar la imagen del texto */
+  }
+  
+  .header-text {
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el contenido desborda */
+    text-align: center;
+    
+  }
+  
+  .visa{
+    width: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    display: flex;
+    margin-left: 38%;
+  }
+    
+  footer {
+    background-color: #ffffff;
+    padding: 30px;
+    position:relative;
+    text-align: center;
+    color: #0b3d81;
+    margin-bottom: 0%;
+    margin-top: 50px;
+  }
+
+  body, html {
+    height: 0%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.815);
+  }
+  
+  #video-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+  }
+  
+  /*Intento de tarjeta*/
+  
+  .credit-card {
+    width: 360px;
+    height: 200px;
+    background-image: url("http://robindelaporte.fr/codepen/visa-bg-4.jpg");
+    background: linear-gradient(135deg, rgba(6, 47, 230, 0.669) 0%,rgba(11, 104, 203, 0.893) 60%);
+    border-radius: 10px;
+    position: relative;
+    perspective: 1000px;
+    margin-left: 36.5%;
+    margin-top: -32%;
+  }
+  
+  .title{
+    margin-top: 55px;
+    font-size: 28px;
+    margin-left: 32px;
+  }
+  
+  .responsive-img{
+    margin-top: 95px;
+    margin-left: 55px;
+    width: 92px;
+    height: 52px;
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .card-expiry{
+    margin-left: 110px;
+  }
+  
+  .card-front .card-logo,
+  .card-back .card-cvv {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .card-marca{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+  }
+  
+  .card-front .card-numberr,
+  .card-back .card-cvv,
+  .card-info {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    color: #fff;
+  }
+  
+  .card-number{
+    margin-top: -92px;
+    position: absolute;
+    bottom: 75px;
+    left: 75px;
+    color: white;
+  }
+  
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-info label {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .card-info span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card-logo img {
+    width: 60px;
+  }
+  
+  .card-marca img{
+    width: 60px;
+  }
+  
+  .card-number span {
+    font-size: 24px;
+  }
+  .card-holder{
+    margin-left: 15px;
+  }
+  
+  .card-cvv span {
+    font-size: 20px;
+  }
+  
+  .credit-card:hover .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .credit-card:hover .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  /* end Intento de tarjeta*/
+  
+  /*boton power*/
+  *{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: var(--font-mono);
+  }
+  
+  section {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 1em;
+  }
+  
+  section h1 {
+      font-size: 3em;
+  
+  }
+  
+  section h2{
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1em;
+      font-size: 2.5em;
+      color: white;
+  }
+  
+  section form{
+      padding: 1.5em;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 500px;
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  section form input{
+      width: 100%;
+      padding: 0.2em;
+      margin-bottom: 0.5em;
+  }
+  
+  section form input{
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 0.8em;
+      border-radius: 9px;
+      border: none;
+      outline-color: #062147;
+      background-color: rgba(255, 255, 255, 0.668);
+      font-family: var(--font-mono);
+      transition: var(--transition);
+  }
+  
+  section form input[type="submit"]{
+      margin-top: 1.5em;
+      background-color: #062147;
+      color: white;
+      font-family: var(--font-mono);
+      transition: var(--transition);
+  }
+  
+  section form input[type="submit"]:active{
+      transform: scale(0.97);
+  }
+  
+  section p{
+      margin-top: 1.5em;
+  }
+  
+  section p a{
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  /*HOME*/
+  
+  section button {
+      background-color: transparent;
+      color: white;
+      transition: var(--transition);
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 9px;
+      font-size: 1em;
+      
+  }
+  
+  .back-button {
+      margin-top: -38%;
+      margin-right: 80%;
+      cursor: pointer;
+     
+    }
+  
+    .back-button i {
+      margin-right: 5px;
+    }
+  
+  #price-container p{
+      color: white;
+      margin-top: -45%;
+      text-align: center;
+      margin-left: -3%;
+      font-size: 18px;
+      
+  }
+  
+  button {
+      padding: 10px;
+      border: none;
+      background-color: #ccc;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .on {
+      background-color: green;
+      border-radius: 52px;
+      margin-left: 15%;
+      margin-top: 6%;
+    }
+    
+    .off {
+      background-color: red;
+      border-radius: 52px;
+      margin-left: 21%;
+      margin-top: 1%;
+  
+    }
+    
+    #toggle-text {
+      margin-left: 10px;
+    }
+    
+  
+  /*card*/
+  .card {
+      width: 400px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-left: 35.1%;
+      margin-top: 35px;
+      margin-bottom: 6%;
+    }
+  
+    @keyframes progressAnimation {
+      0% { width: 0; }
+    }
+    
+    .card {
+      /* Estilos de la tarjeta */
+    }
+    
+    .progress-bar {
+      /* Estilos de la barra de progreso */
+      animation: progressAnimation 1s forwards;
+    }
+    
+  /*transferir*/
+  .transferir{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #145ec6;
+  }
+  
+  button.transferir:hover {
+    background-color: #12448b;
+  }
+  
+  .lbl{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .entrada{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+    
+    .balance {
+      margin-top: 20px;
+    }
+    
+    .amount {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 8px;
+      margin-top: 10px;
+      overflow: hidden;
+      animation: progressAnimation 1s forwards, flashAnimation 3s infinite;
+    }
+    
+    .progress {
+      width: 60%; /* Valor de ejemplo para la barra de progreso */
+      height: 100%;
+      background-color: rgb(32, 176, 32);
+      transition: width 0.10s ease; /* Animación de transición suave */
+      
+    }
+  
+  /*fondo de login*/
+  #background-video {
+      object-fit: cover;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  
+    /*panel lateral derecho*/
+    .container {
+      display: flex;
+      height: auto;
+      margin-top: 45px;
+    }
+    
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+      color: white;
+    }
+    
+    .sidebar {
+      width: 300px;
+      padding: 20px;
+      background-color: #ffffff;
+      color: black;
+    }
+    
+    .sidebar p {
+      margin-bottom: 10px;
+    }
+    
+    .sidebar img {
+      max-width: 100%;
+      height: 80%;
+    }
+    
+    
